@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<!--&nbsp;-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Allchip</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/common.css" type="text/css">
+    <style>
+        .list li {
+            display: inline-block;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #carousel {
+            width: 80%;
+        }
+
+        div>div>div>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg {
+            background-color: white;
+        }
+
+        .text-font-new-times {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .gallery {
+            border-top: steelblue solid 5px;
+            padding: 20px 0px;
+        }
+
+        .div_hover {
+            width: 48%;
+            height: 350px;
+            /* border: #000 solid 1px; */
+            margin: 10px 10px 30px;
+            overflow: hidden;
+        }
+
+        .img_hover:hover {
+            width: 100%;
+            height: 100%;
+            transform: scale(1.05);
+            transform-origin: center center;
+            filter: alpha(opacity=200);
+
+            -moz-opacity: 2;
+
+            -khtml-opacity: 2;
+
+            opacity: 2;
+        }
+
+        .img_hover {
+
+
+            cursor: pointer;
+            transition: all 0.6s;
+
+            filter: alpha(opacity=70);
+
+            -moz-opacity: 0.7;
+
+            -khtml-opacity: 0.7;
+
+            opacity: 0.7;
+        }
+
+        .box_text {
+            text-shadow: 1px 1px 5px #000;
+            letter-spacing: 3px;
+            color: #FFF;
+            font-size: 26px;
+            font-weight: bold;
+            position: absolute;
+            top: 45%;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+    </style>
+</head>
+
+<body class="bg">
+
+<nav class="navbar-inverse navbar-default nav" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><strong style="color: white">Allchip</strong></a>
+
+        </div>
+        <div>
+            <!--向左对齐-->
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        About Us
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="aboutus.html">Who We Are</a></li>
+                        <li><a href="aboutus.html#people">Our People</a></li>
+                        <li><a href="aboutus.html#mission">Our Missions</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="products.html" class="dropdown-toggle">
+                        Products
+                        <b class="caret"></b>
+
+                    </a>
+
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Services
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="server.html">Why AllChip?</a></li>
+                        <li><a href="server.html#2p">Services&Solutions</a></li>
+                        <li><a href="server.html#3p">Excess Inventory</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Quality
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="quality.html">Sourcing Management</a></li>
+                        <li><a href="quality.html#testing">Component Testing</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="policy.html" class="dropdown-toggle">
+                        Policy
+                        <b class="caret"></b>
+
+                    </a>
+
+                </li>
+            </ul>
+
+        </div>
+</nav>
+
+
+
+
+<div id="carousel" class="container-fluid">
+    <img style="width: 300px;" src="logo_alpha.png" >
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="img/index/1.png" height="300">
+                <div class="carousel-caption">
+                    Product
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/index/2.png">
+                <div class="carousel-caption">
+                    Product
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/index/3.png">
+                <div class="carousel-caption">
+                    Product
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/index/4.png">
+                <div class="carousel-caption">
+                    Product
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/index/5.png">
+                <div class="carousel-caption">
+                    Product
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            <img src="img/index/band01.jpeg">
+        </div>
+        <div class="col-sm-2">
+            <img src="img/index/band02.jpeg">
+        </div>
+        <div class="col-sm-2">
+            <img src="img/index/band03.jpeg">
+        </div>
+        <div class="col-sm-2">
+            <img src="img/index/band04.jpeg">
+        </div>
+        <div class="col-sm-2">
+            <img src="img/index/band05.jpeg">
+        </div>
+        <div class="col-sm-2">
+            <img src="img/index/band06.jpeg">
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <h1 class="text-center">Markets</h1>
+
+    <br>
+    <h4 class="text-center">Allchip supports the
+        leading-edge components the top markets. </h4>
+</div>
+<br>
+<br>
+<!--图片墙-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+
+            <h3 class=" gallery">Aerospace</h3>
+            <img src="img/index/13.png" alt="">
+        </div>
+        <div class="col-sm-4">
+            <h3 class=" gallery">Automotive</h3>
+            <img src="img/index/6.png" alt="">
+        </div>
+        <div class="col-sm-4">
+            <h3 class=" gallery">Industrial Automation</h3>
+            <img src="img/index/7.png" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h3 class=" gallery">Telecommunications</h3>
+            <img src="img/index/10_1.png" alt="">
+        </div>
+        <div class="col-sm-4">
+            <h3 class=" gallery">Medical</h3>
+            <img style="vertical-align: middle" src="img/index/15.png" alt="">
+        </div>
+        <div class="col-sm-4">
+            <h3 class=" gallery">Lighting</h3>
+            <img src="img/index/12_1.png" alt="">
+        </div>
+    </div>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 div_hover">
+            <a href="aboutus.html"><img class="img_hover" src="img/index/about us.png" alt="">
+                <div class="box_text">WHAT WE DO</div>
+            </a>
+        </div>
+
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 div_hover">
+            <a href="products.html">
+                <img class="img_hover" src="img/index/lind card.jpg" alt="">
+                <div class="box_text">LIND CARD</div>
+            </a>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 div_hover">
+            <a href="quality.html">
+                <img align="center" class="img_hover" src="img/index/Quality.png" alt="">
+                <div class="box_text">QUALITY</div>
+            </a>
+
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 div_hover">
+            <a href="server.html">
+                <img style="height: 100%" class="img_hover" src="img/index/service.png" alt="">
+                <div class="box_text">SERVICE</div>
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+<br>
+<br>
+
+
+
+<div class="container-fluid" style="background: black ;color: white">
+    <h4>&nbsp;</h4>
+    <div class="row">
+        <div class="col-sm-1">
+            <p>&nbsp;</p>
+        </div>
+        <div class="col-sm-11">
+            <h2 style="color: white">GET IN TOUCH</h2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            <p>&nbsp;</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-xs-1">
+                    <h5 class="glyphicon glyphicon-phone-alt"></h5>
+                </div>
+                <div class="col-xs-11">
+                    <div>
+                        <h5>00852-54483656</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            <p>&nbsp;</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-xs-1">
+                    <h5 class="glyphicon glyphicon glyphicon-print"></h5>
+                </div>
+                <div class="col-xs-11">
+                    <div>
+                        <h5>00852-54483666</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            <p>&nbsp;</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-xs-1">
+                    <h5 class="glyphicon glyphicon glyphicon-envelope"></h5>
+                </div>
+                <div class="col-xs-11">
+                    <div>
+                        <h5>Info@Allchip-electronic.com</h5>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-1">
+            <p>&nbsp;</p>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-xs-1">
+                    <h5 class="glyphicon glyphicon glyphicon-map-marker"></h5>
+                </div>
+                <div class="col-xs-11">
+                    <div>
+                        <h5>ROOM 8,11/F, WANG FAI INDUSTRIAL BUILDING, 29 LUK HOP STREET, SAN PO KONG, KOWLOON, HONG
+                            KONG</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-1">
+
+        </div>
+
+        <div class="col-sm-4">
+            <div class="row">
+                <div class="col-xs-1">
+                    <h5 class="glyphicon glyphicon glyphicon-map-marker"></h5>
+                </div>
+                <div class="col-xs-11">
+                    <div>
+                        <h5 style="text-transform:uppercase" >Room 308-309 Building 501 Shangbu Industrial Zone Futian District Shenzhen</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <h2>&nbsp;</h2>
+</div>
+</body>
+
+</html>
