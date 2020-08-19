@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <!--&nbsp;-->
 
 <head>
@@ -165,6 +165,19 @@
                 </li>
             </ul>
 
+            <ul class="nav navbar-nav navbar-left">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Language
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a th:href="@{/index.html(l='en_US')}">English</a></li>
+                        <li><a th:href="@{/index.html(l='zh_CN')}">Chinese</a></li>
+                    </ul>
+                </li>
+            </ul>
+
         </div>
 </nav>
 
@@ -256,7 +269,7 @@
 </div>
 <br>
 <div class="container">
-    <h1 class="text-center">Markets</h1>
+    <h1 class="text-center" th:text="#{index.markets}">Markets</h1>
 
     <br>
     <h4 class="text-center">Allchip supports the

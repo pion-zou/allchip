@@ -42,6 +42,7 @@ public class HelloController {
 
     @RequestMapping(path = {"/{page}.html"})
     public String toPage(@PathVariable String page){
+        System.out.print("toPage = " + page);
         return page;
     }
 
