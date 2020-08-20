@@ -93,99 +93,18 @@
             text-transform: uppercase;
 
         }
+
     </style>
 </head>
 
 <body class="bg">
 
-<nav class="navbar-inverse navbar-default nav" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"><strong style="color: white">Allchip</strong></a>
-
-        </div>
-        <div>
-            <!--向左对齐-->
-            <ul class="nav navbar-nav navbar-left">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        About Us
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="aboutus.html">Who We Are</a></li>
-                        <li><a href="aboutus.html#people">Our People</a></li>
-                        <li><a href="aboutus.html#mission">Our Missions</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-left">
-                <li class="dropdown">
-                    <a href="products.html" class="dropdown-toggle">
-                        Products
-                        <b class="caret"></b>
-
-                    </a>
-
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-left">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Services
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="server.html">Why AllChip?</a></li>
-                        <li><a href="server.html#2p">Services&Solutions</a></li>
-                        <li><a href="server.html#3p">Excess Inventory</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-left">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Quality
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="quality.html">Sourcing Management</a></li>
-                        <li><a href="quality.html#testing">Component Testing</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-left">
-                <li class="dropdown">
-                    <a href="policy.html" class="dropdown-toggle">
-                        Policy
-                        <b class="caret"></b>
-
-                    </a>
-
-                </li>
-            </ul>
-
-            <ul class="nav navbar-nav navbar-left">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        Language
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a th:href="@{/index.html(l='en_US')}">English</a></li>
-                        <li><a th:href="@{/index.html(l='zh_CN')}">Chinese</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-        </div>
-</nav>
-
-
-
+<!--顶部导航-->
+<div class="row" th:insert="~{common :: header}">
+</div>
 
 <div id="carousel" class="container-fluid">
-    <img style="width: 300px;" src="logo_alpha.png" >
+    <img style="width: 300px;" src="logo_alpha.png">
 
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
         <!-- Indicators -->
@@ -357,133 +276,9 @@
 <br>
 <br>
 
-
-
-<div class="container-fluid" style="background: black ;color: white">
-    <h4>&nbsp;</h4>
-    <div class="row">
-        <div class="col-sm-1">
-            <p>&nbsp;</p>
-        </div>
-        <div class="col-sm-11">
-            <h2 style="color: white">GET IN TOUCH</h2>
-        </div>
-
-    </div>
-    <div class="row">
-        <div class="col-sm-1">
-            <p>&nbsp;</p>
-        </div>
-        <div class="col-sm-4">
-            <div class="row">
-                <div class="col-xs-1">
-                    <h5 class="glyphicon glyphicon-phone-alt"></h5>
-                </div>
-                <div class="col-xs-11">
-                    <div>
-                        <h5>00852-54483656</h5>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-
-
-    </div>
-    <div class="row">
-        <div class="col-sm-1">
-            <p>&nbsp;</p>
-        </div>
-        <div class="col-sm-4">
-            <div class="row">
-                <div class="col-xs-1">
-                    <h5 class="glyphicon glyphicon glyphicon-print"></h5>
-                </div>
-                <div class="col-xs-11">
-                    <div>
-                        <h5>00852-54483666</h5>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-
-
-    </div>
-    <div class="row">
-        <div class="col-sm-1">
-            <p>&nbsp;</p>
-        </div>
-        <div class="col-sm-4">
-            <div class="row">
-                <div class="col-xs-1">
-                    <h5 class="glyphicon glyphicon glyphicon-envelope"></h5>
-                </div>
-                <div class="col-xs-11">
-                    <div>
-                        <h5>Info@Allchip-electronic.com</h5>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </div>
-
-
-    </div>
-
-
-    <div class="row">
-        <div class="col-sm-1">
-            <p>&nbsp;</p>
-        </div>
-
-        <div class="col-sm-4">
-            <div class="row">
-                <div class="col-xs-1">
-                    <h5 class="glyphicon glyphicon glyphicon-map-marker"></h5>
-                </div>
-                <div class="col-xs-11">
-                    <div>
-                        <h5>ROOM 8,11/F, WANG FAI INDUSTRIAL BUILDING, 29 LUK HOP STREET, SAN PO KONG, KOWLOON, HONG
-                            KONG</h5>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="row">
-        <div class="col-sm-1">
-
-        </div>
-
-        <div class="col-sm-4">
-            <div class="row">
-                <div class="col-xs-1">
-                    <h5 class="glyphicon glyphicon glyphicon-map-marker"></h5>
-                </div>
-                <div class="col-xs-11">
-                    <div>
-                        <h5 style="text-transform:uppercase" >Room 308-309 Building 501 Shangbu Industrial Zone Futian District Shenzhen</h5>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-    <h2>&nbsp;</h2>
+<div class="row" th:insert="~{common :: footer}">
 </div>
+
 </body>
 
 </html>

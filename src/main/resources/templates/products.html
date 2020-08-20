@@ -1,13 +1,13 @@
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    </style>
-    <script src="./jquery-3.4.1.min.js"></script>
-    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
     <style>
         .bg {
@@ -34,829 +34,650 @@
         .item_margin_bottom {
             margin: 0, 0, 10;
         }
+
     </style>
     <title>products</title>
 </head>
 
 <body class="bg">
-    <nav class="navbar-inverse navbar-default nav" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"><strong style="color: white">Allchip</strong></a>
+<div class="row" th:insert="~{common :: header}">
+</div>
 
-            </div>
-            <div>
-                <!--向左对齐-->
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            About Us
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="aboutus.html">Who We Are</a></li>
-                            <li><a href="aboutus.html#people">Our People</a></li>
-                            <li><a href="aboutus.html#mission">Our Missions</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="products.html" class="dropdown-toggle">
-                            Products
-                            <b class="caret"></b>
-
-                        </a>
-
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Services
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="server.html">Why AllChip?</a></li>
-                            <li><a href="server.html#2p">Services&Solutions</a></li>
-                            <li><a href="server.html#3p">Excess Inventory</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Quality
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="quality.html">Sourcing Management</a></li>
-                            <li><a href="quality.html#testing">Component Testing</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="policy.html" class="dropdown-toggle">
-                            Policy
-                            <b class="caret"></b>
-
-                        </a>
-
-                    </li>
-                </ul>
-
-            </div>
-
-    </nav>
-    
-    
-    <div class="container">
-        <div class="row" style="margin: 20px">
-            <div class="col-xs-2">
-                <h4 style="text-align: right"> Part Search</h4>
-            </div>
-            <div class="col-xs-10">
-                <div class="input-group">
-                    <input type="text" class="form-control input-xs" placeholder="Do the Impossible"><span
-                        class="input-group-addon btn btn-primary"
-                        style="background-color: red; color: white;">Search</span>
-                </div>
-            </div>
-
+<div class="container">
+    <div class="row" style="margin: 20px">
+        <div class="col-xs-2">
+            <h4 style="text-align: right"> Part Search</h4>
         </div>
-
-    </div>  
-    <div style="text-align: center">
-        <h1>Manufacturers</h1>
-    </div>
-    <div class="container">
-        <div class="row">
-            <!--A列表-->
-            <div class="col-sm-3">
-                <H2 class="list_label">A</H2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.intel.com/content/www/us/en/products/programmable.html" target="_blank"><img
-                        class="img_products" src="img/products/a1.png" alt="Altera"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="#"><img class="img_products" src="img/products/a2.png" alt="Actel"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.analog.com/cn/index.html" target="_blank"><img class="img_products"
-                        src="img/products/a3.png" alt="ADI"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="#"><img class="img_products" src="img/products/a4.png" alt="ALPS"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.amulettechnologies.com/" target="_blank"><img class="img_products"
-                        src="img/products/a5.png" alt="Amulet"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.avx.com/" target="_blank"><img class="img_products" src="img/products/a6.png"
-                        alt="AVX"></a>
-            </div>
-
-        </div>
-        <p>&nbsp;</p>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.akm.com/akm/en/" target="_blank"><img class="img_products" src="img/products/a7.png"
-                        alt="AKM"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="http://aosmd.com/" target="_blank"><img class="img_products" src="img/products/a8.png"
-                        alt="ALPHA&OMEGA"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://ams.com/" target="_blank"><img class="img_products" src="img/products/a9.png"
-                        alt="AMS"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.adestotech.com/" target="_blank"><img class="img_products" src="img/products/a10.png"
-                        alt="Adesto"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.allegromicro.com/" target="_blank"><img class="img_products" src="img/products/a11.png"
-                        alt="Allegro"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://abracon.com/" target="_blank"><img class="img_products" src="img/products/a12.png"
-                        alt="Abracon"></a>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">B</H2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.bourns.com/" target="_blank"><img class="img_products" src="img/products/b1.png"
-                        alt="Bourns"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.bosch-connectivity.com/" target="_blank"><img class="img_products"
-                        src="img/products/b2.png" alt="BOSCH"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.broadcom.com/" target="_blank"><img class="img_products" src="img/products/b3.png"
-                        alt="Broadcom"></a>
-            </div>
-
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">C</H2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.cypress.com/" target="_blank"><img class="img_products" src="img/products/c1.png"
-                        alt="Cypress"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="#"><img class="img_products" src="img/products/c2.png" alt="Coilcraft"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.cirrus.com/" target="_blank"><img class="img_products" src="img/products/c3.png"
-                        alt="Cirrus Logic"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.cree.com/" target="_blank"><img class="img_products" src="img/products/c4.png"
-                        alt="Cree"></a>
-            </div>
-
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">D</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.diodes.com/" target="_blank"><img class="img_products" src="img/products/d1.png"
-                        alt="Diodes"></a>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">E</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://epson.com/microdevices" target="_blank"><img class="img_products" src="img/products/e1.png"
-                        alt="Epson"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.everlight.com/" target="_blank"><img class="img_products" src="img/products/e2.png"
-                        alt="Everlight"></a>
+        <div class="col-xs-10">
+            <div class="input-group">
+                <input type="text" class="form-control input-xs" placeholder="Do the Impossible"><span
+                    class="input-group-addon btn btn-primary"
+                    style="background-color: red; color: white;">Search</span>
             </div>
         </div>
 
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">F</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.nxp.com/" target="_blank"><img class="img_products" src="img/products/f1.png"
-                        alt="Freescale"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.fujitsu.com/us/products/devices/" target="_blank"><img class="img_products"
-                        src="img/products/f2.png" alt="Fujitsu"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.ftdichip.com/" target="_blank"><img class="img_products" src="img/products/f3.png"
-                        alt="FTDI"></a>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">H</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.hirose.com/" target="_blank"><img class="img_products" src="img/products/h1.png"
-                        alt="Hirose"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="#"><img class="img_products" src="img/products/h2.png" alt="Hittite"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://aerospace.honeywell.com/en" target="_blank"><img class="img_products"
-                        src="img/products/h3.png" alt="Honeywell"></a>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">I</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2 item_margin_bottom">
-                <a href="https://www.infineon.com/" target="_blank"><img class="img_products" src="img/products/i1.png"
-                        alt="Infineon"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.intel.com/content/www/us/en/products/programmable.html" target="_blank"><img
-                        class="img_products" src="img/products/i2.png" alt="Intel"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.idt.com/" target="_blank"><img class="img_products" src="img/products/i3.png"
-                        alt="IDT"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.inphi.com/" target="_blank"><img class="img_products" src="img/products/i4.png"
-                        alt="Inphi"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www2.renesas.cn/cn/zh/" target="_blank"><img class="img_products" src="img/products/i5.png"
-                        alt="Intersil"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.ixys.com/" target="_blank"><img class="img_products" src="img/products/i6.png"
-                        alt="IXYS"></a>
-            </div>
-
-        </div>
-        <p>&nbsp;</p>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="http://www.issi.com/US/Index.shtml" target="_blank"><img class="img_products"
-                        src="img/products/i7.png" alt="ISSI"></a>
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">J</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2 item_margin_bottom">
-                <a href="http://www.jae.com/en/" target="_blank"><img class="img_products" src="img/products/j1.png"
-                        alt="JAE"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.jst.com/" target="_blank"><img class="img_products" src="img/products/j2.png"
-                        alt="JST"></a>
-            </div>
-
-
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">K</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2 item_margin_bottom">
-                <a href="https://search.kemet.com/component-edge/#/" target="_blank"><img class="img_products"
-                        src="img/products/k1.png" alt="KEMET"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.kingbrightusa.com/Default.asp" target="_blank"><img class="img_products"
-                        src="img/products/k2.png" alt="Kingbright"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://global.kyocera.com/prdct/electro/" target="_blank"><img class="img_products"
-                        src="img/products/k3.png" alt="KYOCERA"></a>
-            </div>
-
-
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">L</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2 item_margin_bottom">
-                <a href="#"><img class="img_products" src="img/products/L1.png" alt="Linear"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://us.liteon.com/en-global/Home/index" target="_blank"><img class="img_products"
-                        src="img/products/L2.png" alt="Lite-On"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.littelfuse.com/" target="_blank"><img class="img_products" src="img/products/L3.png"
-                        alt="Littelfuse"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.latticesemi.com/" target="_blank"><img class="img_products" src="img/products/L4.png"
-                        alt="Lattice"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.lemusa.com/" target="_blank"><img class="img_products" src="img/products/L5.png"
-                        alt="LEM"></a>
-
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">M</H2>
-            </div>
-
-
-        </div>
-        <div class="row">
-
-            <div class="col-sm-2">
-                <a href="https://www.maximintegrated.com/en.html" target="_blank"><img class="img_products"
-                        src="img/products/m1.png" alt="Maxim"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.micron.com/" target="_blank"><img class="img_products" src="img/products/m2.png"
-                        alt="Micron"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.microsemi.com/" target="_blank"><img class="img_products" src="img/products/m3.png"
-                        alt="Microsemi"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.molex.com/molex/home" target="_blank"><img class="img_products"
-                        src="img/products/m4.png" alt="Molex"></a>
-
-            </div>
-            <div class="col-sm-2 item_margin_bottom">
-                <a href="https://www.murata.com/" target="_blank"><img class="img_products" src="img/products/m5.png"
-                        alt="Murata"></a>
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.meanwellusa.com/index.aspx" target="_blank"><img class="img_products"
-                        src="img/products/m6.png" alt="MEAN WELL"></a>
-            </div>
-
-
-        </div>
-        <p>&nbsp;</p>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.melexis.com/zh" target="_blank"><img class="img_products" src="img/products/m7.png"
-                        alt="Melexis"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.monolithicpower.com/" target="_blank"><img class="img_products"
-                        src="img/products/m8.png" alt="MPS"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.microchip.com/" target="_blank"><img class="img_products" src="img/products/m9.png"
-                        alt="Microchip"></a>
-
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">N</H2>
-            </div>
-
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.nexperia.com/" target="_blank"><img class="img_products" src="img/products/n1.png"
-                        alt="Nexperia"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.nxp.com/" target="_blank"><img class="img_products" src="img/products/n2.png"
-                        alt="NXP"></a>
-
-            </div>
-
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">O</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.onsemi.com/" target="_blank"><img class="img_products" src="img/products/o1.png"
-                        alt="ON"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://automation.omron.com/en/us/" target="_blank"><img class="img_products"
-                        src="img/products/o2.png" alt="Omron"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.osram.com/os/index.jsp" target="_blank"><img class="img_products"
-                        src="img/products/o3.png" alt="OSRAM"></a>
-
-            </div>
-
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">P</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.powerint.cn/" target="_blank"><img class="img_products" src="img/products/p1.png"
-                        alt="Power"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://na.industrial.panasonic.com/" target="_blank"><img class="img_products"
-                        src="img/products/p2.png" alt="Panasonic"></a>
-
-            </div>
-
-
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">Q</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.qualcomm.com/" target="_blank"><img class="img_products" src="img/products/q1.png"
-                        alt="Qualcomm"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="#"><img class="img_products" src="img/products/q2.png" alt="Qorvo"></a>
-
-            </div>
-
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">R</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.renesas.com/us/en.html" target="_blank"><img class="img_products"
-                        src="img/products/r1.png" alt="Renesas"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.rubycon.com/" target="_blank"> <img class="img_products" src="img/products/r2.png"
-                        alt="Rubycon"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.rohm.com/" target="_blank"><img class="img_products" src="img/products/r3.png"
-                        alt="ROHM"></a>
-
-            </div>
-
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">S</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.st.com/content/st_com/en.html" target="_blank"><img class="img_products"
-                        src="img/products/s1.png" alt="ST"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.skyworksinc.com/" target="_blank"><img class="img_products" src="img/products/s2.png"
-                        alt="Skyworks"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.samsungsem.com/global/index.jsp" target="_blank"><img class="img_products"
-                        src="img/products/s3.png" alt="Samsung"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.semtech.com/" target="_blank"><img class="img_products" src="img/products/s4.png"
-                        alt="Semtech"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.sharpsma.com/" target="_blank"><img class="img_products" src="img/products/s5.png"
-                        alt="Sharp"></a>
-
-            </div>
-
-
-        </div>
-
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">T</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.yuden.co.jp/ut/" target="_blank"><img class="img_products" src="img/products/t1.png"
-                        alt="TAIYO "></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.tdk-electronics.tdk.com/en//" target="_blank"><img class="img_products"
-                        src="img/products/t2.png" alt="TDK"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://www.te.com/usa-en/home.html" target="_blank"><img class="img_products"
-                        src="img/products/t3.png" alt="TE"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="http://www.ti.com/" target="_blank"><img class="img_products" src="img/products/t4.png"
-                        alt="TI"></a>
-
-            </div>
-            <div class="col-sm-2">
-                <a href="https://business.toshiba-memory.com/en-us/top.html" target="_blank"><img class="img_products"
-                        src="img/products/t5.png" alt="Toshiba"></a>
-
-            </div>
-
-
-
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">V</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="http://www.vishay.com/" target="_blank"><img class="img_products" src="img/products/v1.png"
-                        alt="Vishay"></a>
-
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">W</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="http://www.winbond-usa.com/" target="_blank"><img class="img_products" src="img/products/w1.png"
-                        alt="Winbond"></a>
-
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">X</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="https://www.xilinx.com/" target="_blank"><img class="img_products" src="img/products/x1.png"
-                        alt="Xilinx"></a>
-
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="col-sm-3">
-                <H2 class="list_label">Y</H2>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-2">
-                <a href="http://www.yageo.com/NewPortal/_en/index.jsp" target="_blank"><img class="img_products"
-                        src="img/products/y1.png" alt="Yageo"></a>
-
-            </div>
-        </div>
-
-    </div><br>
-    <br>
-
-    <div class="container-fluid" style="background: black ;color: white">
-        <h4>&nbsp;</h4>
-        <div class="row">
-            <div class="col-sm-1">
-                <p>&nbsp;</p>
-            </div>
-            <div class="col-sm-11">
-                <h2 style="color: white">GET IN TOUCH</h2>
-            </div>
-
-        </div>
-        <div class="row">
-
-
-            <div class="col-sm-1">
-                <p>&nbsp;</p>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <h5 class="glyphicon glyphicon-phone-alt"></h5>
-                    </div>
-                    <div class="col-xs-11">
-                        <div>
-                            <h5>00852-54483656</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </div>
-        <div class="row">
-            <div class="col-sm-1">
-                <p>&nbsp;</p>
-            </div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <h5 class="glyphicon glyphicon glyphicon-print"></h5>
-                    </div>
-                    <div class="col-xs-11">
-                        <div>
-                            <h5>00852-54483666</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </div>
-        <div class="row">
-            <div class="col-sm-1">
-                <p>&nbsp;</p>
-            </div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <h5 class="glyphicon glyphicon glyphicon-envelope"></h5>
-                    </div>
-                    <div class="col-xs-11">
-                        <div>
-                            <h5>Info@Allchip-electronic.com</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </div>
-
-
-        <div class="row">
-            <div class="col-sm-1">
-                <p>&nbsp;</p>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <h5 class="glyphicon glyphicon glyphicon-map-marker"></h5>
-                    </div>
-                    <div class="col-xs-11">
-                        <div>
-                            <h5>ROOM 8,11/F, WANG FAI INDUSTRIAL BUILDING, 29 LUK HOP STREET, SAN PO KONG, KOWLOON, HONG
-                                KONG</h5>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-1">
-
-            </div>
-
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <h5 class="glyphicon glyphicon glyphicon-map-marker"></h5>
-                    </div>
-                    <div class="col-xs-11">
-                        <div>
-                            <h5 style="text-transform:uppercase" >Room 308-309 Building 501 Shangbu Industrial Zone Futian District Shenzhen</h5>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <h2>&nbsp;</h2>
     </div>
 
+</div>
+<div style="text-align: center">
+    <h1>Manufacturers</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <!--A列表-->
+        <div class="col-sm-3">
+            <H2 class="list_label">A</H2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.intel.com/content/www/us/en/products/programmable.html" target="_blank"><img
+                    class="img_products" src="img/products/a1.png" alt="Altera"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="#"><img class="img_products" src="img/products/a2.png" alt="Actel"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.analog.com/cn/index.html" target="_blank"><img class="img_products"
+                                                                                src="img/products/a3.png" alt="ADI"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="#"><img class="img_products" src="img/products/a4.png" alt="ALPS"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.amulettechnologies.com/" target="_blank"><img class="img_products"
+                                                                              src="img/products/a5.png"
+                                                                              alt="Amulet"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.avx.com/" target="_blank"><img class="img_products" src="img/products/a6.png"
+                                                               alt="AVX"></a>
+        </div>
+
+    </div>
+    <p>&nbsp;</p>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.akm.com/akm/en/" target="_blank"><img class="img_products" src="img/products/a7.png"
+                                                                       alt="AKM"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="http://aosmd.com/" target="_blank"><img class="img_products" src="img/products/a8.png"
+                                                             alt="ALPHA&OMEGA"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://ams.com/" target="_blank"><img class="img_products" src="img/products/a9.png"
+                                                            alt="AMS"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.adestotech.com/" target="_blank"><img class="img_products" src="img/products/a10.png"
+                                                                       alt="Adesto"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.allegromicro.com/" target="_blank"><img class="img_products" src="img/products/a11.png"
+                                                                         alt="Allegro"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://abracon.com/" target="_blank"><img class="img_products" src="img/products/a12.png"
+                                                                alt="Abracon"></a>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">B</H2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.bourns.com/" target="_blank"><img class="img_products" src="img/products/b1.png"
+                                                                   alt="Bourns"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.bosch-connectivity.com/" target="_blank"><img class="img_products"
+                                                                               src="img/products/b2.png"
+                                                                               alt="BOSCH"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.broadcom.com/" target="_blank"><img class="img_products" src="img/products/b3.png"
+                                                                     alt="Broadcom"></a>
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">C</H2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.cypress.com/" target="_blank"><img class="img_products" src="img/products/c1.png"
+                                                                    alt="Cypress"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="#"><img class="img_products" src="img/products/c2.png" alt="Coilcraft"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.cirrus.com/" target="_blank"><img class="img_products" src="img/products/c3.png"
+                                                                   alt="Cirrus Logic"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.cree.com/" target="_blank"><img class="img_products" src="img/products/c4.png"
+                                                                alt="Cree"></a>
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">D</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.diodes.com/" target="_blank"><img class="img_products" src="img/products/d1.png"
+                                                                   alt="Diodes"></a>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">E</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://epson.com/microdevices" target="_blank"><img class="img_products" src="img/products/e1.png"
+                                                                          alt="Epson"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.everlight.com/" target="_blank"><img class="img_products" src="img/products/e2.png"
+                                                                     alt="Everlight"></a>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">F</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.nxp.com/" target="_blank"><img class="img_products" src="img/products/f1.png"
+                                                                alt="Freescale"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.fujitsu.com/us/products/devices/" target="_blank"><img class="img_products"
+                                                                                        src="img/products/f2.png"
+                                                                                        alt="Fujitsu"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.ftdichip.com/" target="_blank"><img class="img_products" src="img/products/f3.png"
+                                                                     alt="FTDI"></a>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">H</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.hirose.com/" target="_blank"><img class="img_products" src="img/products/h1.png"
+                                                                   alt="Hirose"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="#"><img class="img_products" src="img/products/h2.png" alt="Hittite"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://aerospace.honeywell.com/en" target="_blank"><img class="img_products"
+                                                                              src="img/products/h3.png" alt="Honeywell"></a>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">I</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2 item_margin_bottom">
+            <a href="https://www.infineon.com/" target="_blank"><img class="img_products" src="img/products/i1.png"
+                                                                     alt="Infineon"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.intel.com/content/www/us/en/products/programmable.html" target="_blank"><img
+                    class="img_products" src="img/products/i2.png" alt="Intel"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.idt.com/" target="_blank"><img class="img_products" src="img/products/i3.png"
+                                                                alt="IDT"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.inphi.com/" target="_blank"><img class="img_products" src="img/products/i4.png"
+                                                                  alt="Inphi"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www2.renesas.cn/cn/zh/" target="_blank"><img class="img_products" src="img/products/i5.png"
+                                                                          alt="Intersil"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.ixys.com/" target="_blank"><img class="img_products" src="img/products/i6.png"
+                                                                alt="IXYS"></a>
+        </div>
+
+    </div>
+    <p>&nbsp;</p>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="http://www.issi.com/US/Index.shtml" target="_blank"><img class="img_products"
+                                                                              src="img/products/i7.png" alt="ISSI"></a>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">J</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2 item_margin_bottom">
+            <a href="http://www.jae.com/en/" target="_blank"><img class="img_products" src="img/products/j1.png"
+                                                                  alt="JAE"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.jst.com/" target="_blank"><img class="img_products" src="img/products/j2.png"
+                                                               alt="JST"></a>
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">K</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2 item_margin_bottom">
+            <a href="https://search.kemet.com/component-edge/#/" target="_blank"><img class="img_products"
+                                                                                      src="img/products/k1.png"
+                                                                                      alt="KEMET"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.kingbrightusa.com/Default.asp" target="_blank"><img class="img_products"
+                                                                                     src="img/products/k2.png"
+                                                                                     alt="Kingbright"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://global.kyocera.com/prdct/electro/" target="_blank"><img class="img_products"
+                                                                                     src="img/products/k3.png"
+                                                                                     alt="KYOCERA"></a>
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">L</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2 item_margin_bottom">
+            <a href="#"><img class="img_products" src="img/products/L1.png" alt="Linear"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://us.liteon.com/en-global/Home/index" target="_blank"><img class="img_products"
+                                                                                      src="img/products/L2.png"
+                                                                                      alt="Lite-On"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.littelfuse.com/" target="_blank"><img class="img_products" src="img/products/L3.png"
+                                                                       alt="Littelfuse"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.latticesemi.com/" target="_blank"><img class="img_products" src="img/products/L4.png"
+                                                                       alt="Lattice"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.lemusa.com/" target="_blank"><img class="img_products" src="img/products/L5.png"
+                                                                  alt="LEM"></a>
+
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">M</H2>
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-2">
+            <a href="https://www.maximintegrated.com/en.html" target="_blank"><img class="img_products"
+                                                                                   src="img/products/m1.png"
+                                                                                   alt="Maxim"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.micron.com/" target="_blank"><img class="img_products" src="img/products/m2.png"
+                                                                   alt="Micron"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.microsemi.com/" target="_blank"><img class="img_products" src="img/products/m3.png"
+                                                                      alt="Microsemi"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.molex.com/molex/home" target="_blank"><img class="img_products"
+                                                                            src="img/products/m4.png" alt="Molex"></a>
+
+        </div>
+        <div class="col-sm-2 item_margin_bottom">
+            <a href="https://www.murata.com/" target="_blank"><img class="img_products" src="img/products/m5.png"
+                                                                   alt="Murata"></a>
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.meanwellusa.com/index.aspx" target="_blank"><img class="img_products"
+                                                                                 src="img/products/m6.png"
+                                                                                 alt="MEAN WELL"></a>
+        </div>
+
+
+    </div>
+    <p>&nbsp;</p>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.melexis.com/zh" target="_blank"><img class="img_products" src="img/products/m7.png"
+                                                                      alt="Melexis"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.monolithicpower.com/" target="_blank"><img class="img_products"
+                                                                            src="img/products/m8.png" alt="MPS"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.microchip.com/" target="_blank"><img class="img_products" src="img/products/m9.png"
+                                                                      alt="Microchip"></a>
+
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">N</H2>
+        </div>
+
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.nexperia.com/" target="_blank"><img class="img_products" src="img/products/n1.png"
+                                                                     alt="Nexperia"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.nxp.com/" target="_blank"><img class="img_products" src="img/products/n2.png"
+                                                                alt="NXP"></a>
+
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">O</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.onsemi.com/" target="_blank"><img class="img_products" src="img/products/o1.png"
+                                                                   alt="ON"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://automation.omron.com/en/us/" target="_blank"><img class="img_products"
+                                                                               src="img/products/o2.png"
+                                                                               alt="Omron"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.osram.com/os/index.jsp" target="_blank"><img class="img_products"
+                                                                              src="img/products/o3.png" alt="OSRAM"></a>
+
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">P</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.powerint.cn/" target="_blank"><img class="img_products" src="img/products/p1.png"
+                                                                    alt="Power"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://na.industrial.panasonic.com/" target="_blank"><img class="img_products"
+                                                                                src="img/products/p2.png"
+                                                                                alt="Panasonic"></a>
+
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">Q</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.qualcomm.com/" target="_blank"><img class="img_products" src="img/products/q1.png"
+                                                                     alt="Qualcomm"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="#"><img class="img_products" src="img/products/q2.png" alt="Qorvo"></a>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">R</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.renesas.com/us/en.html" target="_blank"><img class="img_products"
+                                                                              src="img/products/r1.png"
+                                                                              alt="Renesas"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.rubycon.com/" target="_blank"> <img class="img_products" src="img/products/r2.png"
+                                                                    alt="Rubycon"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.rohm.com/" target="_blank"><img class="img_products" src="img/products/r3.png"
+                                                                 alt="ROHM"></a>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">S</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.st.com/content/st_com/en.html" target="_blank"><img class="img_products"
+                                                                                     src="img/products/s1.png" alt="ST"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.skyworksinc.com/" target="_blank"><img class="img_products" src="img/products/s2.png"
+                                                                       alt="Skyworks"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.samsungsem.com/global/index.jsp" target="_blank"><img class="img_products"
+                                                                                      src="img/products/s3.png"
+                                                                                      alt="Samsung"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.semtech.com/" target="_blank"><img class="img_products" src="img/products/s4.png"
+                                                                    alt="Semtech"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.sharpsma.com/" target="_blank"><img class="img_products" src="img/products/s5.png"
+                                                                     alt="Sharp"></a>
+
+        </div>
+
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">T</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.yuden.co.jp/ut/" target="_blank"><img class="img_products" src="img/products/t1.png"
+                                                                       alt="TAIYO "></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.tdk-electronics.tdk.com/en//" target="_blank"><img class="img_products"
+                                                                                    src="img/products/t2.png" alt="TDK"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://www.te.com/usa-en/home.html" target="_blank"><img class="img_products"
+                                                                               src="img/products/t3.png" alt="TE"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="http://www.ti.com/" target="_blank"><img class="img_products" src="img/products/t4.png"
+                                                              alt="TI"></a>
+
+        </div>
+        <div class="col-sm-2">
+            <a href="https://business.toshiba-memory.com/en-us/top.html" target="_blank"><img class="img_products"
+                                                                                              src="img/products/t5.png"
+                                                                                              alt="Toshiba"></a>
+
+        </div>
+
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">V</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="http://www.vishay.com/" target="_blank"><img class="img_products" src="img/products/v1.png"
+                                                                  alt="Vishay"></a>
+
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">W</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="http://www.winbond-usa.com/" target="_blank"><img class="img_products" src="img/products/w1.png"
+                                                                       alt="Winbond"></a>
+
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">X</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="https://www.xilinx.com/" target="_blank"><img class="img_products" src="img/products/x1.png"
+                                                                   alt="Xilinx"></a>
+
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <H2 class="list_label">Y</H2>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <a href="http://www.yageo.com/NewPortal/_en/index.jsp" target="_blank"><img class="img_products"
+                                                                                        src="img/products/y1.png"
+                                                                                        alt="Yageo"></a>
+
+        </div>
+    </div>
+
+</div>
+<br>
+<br>
+
+<div class="row" th:insert="~{common :: footer}">
+</div>
 </body>
 
 </html>

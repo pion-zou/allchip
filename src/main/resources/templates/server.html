@@ -1,11 +1,12 @@
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Services</title>
-    <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
     <script src="/jquery-3.4.1.min.js"></script>
     <script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/common.css">
@@ -38,328 +39,137 @@
             text-transform: uppercase;
 
         }
+
     </style>
 
 </head>
 
 <body class="bg">
-    <nav class="navbar-inverse navbar-default nav" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"><strong style="color: white">Allchip</strong></a>
-
-            </div>
-            <div>
-                <!--向左对齐-->
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            About Us
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="aboutus.html">Who We Are</a></li>
-                            <li><a href="aboutus.html#people">Our People</a></li>
-                            <li><a href="aboutus.html#mission">Our Missions</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="products.html" class="dropdown-toggle">
-                            Products
-                            <b class="caret"></b>
-
-                        </a>
-
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Services
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="server.html">Why AllChip?</a></li>
-                            <li><a href="server.html#2p">Services&Solutions</a></li>
-                            <li><a href="server.html#3p">Excess Inventory</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Quality
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                                <li><a href="quality.html">Sourcing Management</a></li>
-                                <li><a href="quality.html#testing">Component Testing</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="dropdown">
-                        <a href="policy.html" class="dropdown-toggle">
-                            Policy
-                            <b class="caret"></b>
-
-                        </a>
-
-                    </li>
-                </ul>
-
-            </div>
-
-    </nav>
-    <main style="width: 80%; margin: 0.5em auto">
-        <img style="width: 300px;" src="logo_alpha.png" >
-        <div style="width: 100%; height: 20em; overflow: hidden; margin: 0 auto">
-            <div class="grad-hor" style="text-align: center ; position: absolute;
+<div class="row" th:insert="~{common :: header}">
+</div>
+<main style="width: 80%; margin: 0.5em auto">
+    <img style="width: 300px;" src="logo_alpha.png">
+    <div style="width: 100%; height: 20em; overflow: hidden; margin: 0 auto">
+        <div class="grad-hor" style="text-align: center ; position: absolute;
             width: 80%;
             height: 20em;">
-                <h1 class="box_text" style="font-size: 3.75em;color: white">Services & Solutions</h1>
-            </div>
+            <h1 class="box_text" style="font-size: 3.75em;color: white">Services & Solutions</h1>
         </div>
-
-        <div class="container-fluid">
-            <div class="row" style="margin-top: 5em ;">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-block"
-                    style="border:0.1em solid gray; overflow: hidden;">
-                    <img class="center-block" style="width: 25em;" src="img/services/S1.PNG" alt="">
-                </div>
-                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="margin: 0%;">
-                    <div style="border:0.1em solid gray; margin-left: 1em ; height: 36em ; padding:5% 15% 0 4%">
-                        <h2 id="1p" style="font-weight: 900"> Why AC?</h2>
-                        <h3 style="font-weight: 600">Obsolescence Provider</h3>
-                        <p>
-                            <strong>AC</strong> has built a network of customers and suppliers to solve supply chain
-                            issues, mainly for
-                            allocated and obsolete components. High ability to find Obsolete, Hard-To-Find, or Allocated
-                            component at a competitive price is our specialty.</p>
-
-                        <h3 style="font-weight: 600">Global network</h3>
-
-                        <p>We pride ourselves on our sourcing ability of electronic components. When you work with
-                            All-chip, you automatically get access to our global network of suppliers. Our strong
-                            strategic
-                            partnerships with leading component manufacturers, authorized distributors, OEMs as well as
-                            open
-                            market distributors, allows us to serve you in the most professional way.
-                        </p>
-                        <h3 style="font-weight: 600">Prompt response</h3>
-                        <p>We pride ourselves on fast response to Customer's need, swift decision-making, On-time
-                            delivery
-                            and excellent customer service</p>
-
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 1em ">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="border:0.1em solid gray; overflow: hidden;">
-                    <img style="height: 48em;transform: scale(2.2)" src="img/services/S2.png" alt="">
-                </div>
-                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="margin: 0%;">
-                    <div style="border:0.1em solid gray; margin-left: 1em ; height: 48em ; padding:0% 15% 0 4%">
-                        <h2 id="2p" style="font-weight: 900">Solution</h2>
-                        <p>The Allchip business model focuses on the formation of strategic partnerships with leading
-                            OEM and EMS. Our partners regard us as a company built on solutions, while we also view
-                            solutions as the key to growth.</p>
-                        <h3  style="font-weight: 600">Component Solutions</h3>
-                        <ul>
-                            <li>Emergency sourcing for production shortages</li>
-                            <li>make strategic buys for EOL or presents alternatives</li>
-                            <li>Market analysis: Real time Information showing commodity pricing and worldwide inventory
-                                levels. Moreover a big database enables our sales to statistically analyze data for
-                                thousands of products rapidly and efficiently. </li>
-                        </ul>
-                        <h3 style="font-weight: 600">BOM Solutions</h3>
-                        <ul>
-                            <li>BOM Completion: Help you gain access to the entire BOM to simply your suppliers
-                                management</li>
-                            <li>We can ship product according to your schedule </li>
-                            <li>Cost reduction:
-                                Material cost reduction has a great effect on the bottom line. Industry experts agree a
-                                10% decrease in material spending has the same effect on profits as a 20% increase in
-                                sales.
-                                <strong>AC</strong> can lower material costs up to 80% below market through our vast
-                                inventory and
-                                OEM supplier rewards program, saving our customers millions of dollars while lowering
-                                their PPV.
-                            </li>
-                        </ul>
-                        <h3 style="font-weight: 600">Our Value-Added Services</h3>
-                        <ul>
-                            <li>Testing & Authentication</li>
-                            <li>Tape & Reeling</li>
-                            <li>Kitting</li>
-                            <li>RoHS Conversion Pb to Non Pb</li>
-                            <li>Solder-ability, Re-Tinning, Baking And Packing</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 1em ">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="border:0.1em solid gray; overflow: hidden; ">
-                    <img style="height: 36em;transform: scale(1.2);" src="img/services/S3.PNG" alt="">
-                </div>
-                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="margin: 0%;">
-                    <div style="border:0.1em solid gray; margin-left: 1em ; height: 36em ; padding:5% 15% 0 4%">
-                        <h2 id="3p" style="font-weight: 900">Excess Inventory</h2>
-                        <p>
-                            <strong>AC</strong> is dedicated to help you resolve your Excess inventory problems. It is
-                            likely that your
-                            dead and slow-moving inventory is needed in someone else’ s production. We can turn your
-                            inventory into real money. </p>
-                        <h3 style="font-weight: 600">Consignment</h3>
-                        <p>Consign your stock to our warehouse, and you will increase the likelihood of selling the
-                            product based on our extensive network, prompt and expert Service.
-                            Or we market your excess inventory as available or “in stock” to
-                            <strong>AC</strong>. Our specialized sales
-                            team will follow the market trends for each line of your inventory and define the target
-                            customers that have a demand for your parts.
-                        </p>
-
-                        <h3 style="font-weight: 600">Line or Lot Buy</h3>
-
-                        <p>We purchase a single dead inventory line items from you or we purchase your excess lot.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <div class="container-fluid" style="background: black ;color: white">
-        <h4>&nbsp;</h4>
-        <div class="row">
-            <div class="col-sm-1">
-                <p>&nbsp;</p>
-            </div>
-            <div class="col-sm-11">
-                <h2 style="color: white">GET IN TOUCH</h2>
-            </div>
-
-        </div>
-        <div class="row">
-
-
-            <div class="col-sm-1">
-                <p>&nbsp;</p>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <h5 class="glyphicon glyphicon-phone-alt"></h5>
-                    </div>
-                    <div class="col-xs-11">
-                        <div>
-                            <h5>00852-54483656</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </div>
-        <div class="row">
-            <div class="col-sm-1">
-                <p>&nbsp;</p>
-            </div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <h5 class="glyphicon glyphicon glyphicon-print"></h5>
-                    </div>
-                    <div class="col-xs-11">
-                        <div>
-                            <h5>00852-54483666</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </div>
-        <div class="row">
-            <div class="col-sm-1">
-                <p>&nbsp;</p>
-            </div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <h5 class="glyphicon glyphicon glyphicon-envelope"></h5>
-                    </div>
-                    <div class="col-xs-11">
-                        <div>
-                            <h5>Info@Allchip-electronic.com</h5>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-        </div>
-
-
-        <div class="row">
-            <div class="col-sm-1">
-                <p>&nbsp;</p>
-            </div>
-
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <h5 class="glyphicon glyphicon glyphicon-map-marker"></h5>
-                    </div>
-                    <div class="col-xs-11">
-                        <div>
-                            <h5>ROOM 8,11/F, WANG FAI INDUSTRIAL BUILDING, 29 LUK HOP STREET, SAN PO KONG, KOWLOON, HONG
-                                KONG</h5>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-sm-1">
-
-            </div>
-
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-1">
-                        <h5 class="glyphicon glyphicon glyphicon-map-marker"></h5>
-                    </div>
-                    <div class="col-xs-11">
-                        <div>
-                            <h5 style="text-transform:uppercase" >Room 308-309 Building 501 Shangbu Industrial Zone Futian District Shenzhen</h5>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-        <h2>&nbsp;</h2>
     </div>
+
+    <div class="container-fluid">
+        <div class="row" style="margin-top: 5em ;">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 center-block"
+                 style="border:0.1em solid gray; overflow: hidden;">
+                <img class="center-block" style="width: 25em;" src="img/services/S1.PNG" alt="">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="margin: 0%;">
+                <div style="border:0.1em solid gray; margin-left: 1em ; height: 36em ; padding:5% 15% 0 4%">
+                    <h2 id="1p" style="font-weight: 900"> Why AC?</h2>
+                    <h3 style="font-weight: 600">Obsolescence Provider</h3>
+                    <p>
+                        <strong>AC</strong> has built a network of customers and suppliers to solve supply chain
+                        issues, mainly for
+                        allocated and obsolete components. High ability to find Obsolete, Hard-To-Find, or Allocated
+                        component at a competitive price is our specialty.</p>
+
+                    <h3 style="font-weight: 600">Global network</h3>
+
+                    <p>We pride ourselves on our sourcing ability of electronic components. When you work with
+                        All-chip, you automatically get access to our global network of suppliers. Our strong
+                        strategic
+                        partnerships with leading component manufacturers, authorized distributors, OEMs as well as
+                        open
+                        market distributors, allows us to serve you in the most professional way.
+                    </p>
+                    <h3 style="font-weight: 600">Prompt response</h3>
+                    <p>We pride ourselves on fast response to Customer's need, swift decision-making, On-time
+                        delivery
+                        and excellent customer service</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 1em ">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="border:0.1em solid gray; overflow: hidden;">
+                <img style="height: 48em;transform: scale(2.2)" src="img/services/S2.png" alt="">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="margin: 0%;">
+                <div style="border:0.1em solid gray; margin-left: 1em ; height: 48em ; padding:0% 15% 0 4%">
+                    <h2 id="2p" style="font-weight: 900">Solution</h2>
+                    <p>The Allchip business model focuses on the formation of strategic partnerships with leading
+                        OEM and EMS. Our partners regard us as a company built on solutions, while we also view
+                        solutions as the key to growth.</p>
+                    <h3 style="font-weight: 600">Component Solutions</h3>
+                    <ul>
+                        <li>Emergency sourcing for production shortages</li>
+                        <li>make strategic buys for EOL or presents alternatives</li>
+                        <li>Market analysis: Real time Information showing commodity pricing and worldwide inventory
+                            levels. Moreover a big database enables our sales to statistically analyze data for
+                            thousands of products rapidly and efficiently.
+                        </li>
+                    </ul>
+                    <h3 style="font-weight: 600">BOM Solutions</h3>
+                    <ul>
+                        <li>BOM Completion: Help you gain access to the entire BOM to simply your suppliers
+                            management
+                        </li>
+                        <li>We can ship product according to your schedule</li>
+                        <li>Cost reduction:
+                            Material cost reduction has a great effect on the bottom line. Industry experts agree a
+                            10% decrease in material spending has the same effect on profits as a 20% increase in
+                            sales.
+                            <strong>AC</strong> can lower material costs up to 80% below market through our vast
+                            inventory and
+                            OEM supplier rewards program, saving our customers millions of dollars while lowering
+                            their PPV.
+                        </li>
+                    </ul>
+                    <h3 style="font-weight: 600">Our Value-Added Services</h3>
+                    <ul>
+                        <li>Testing & Authentication</li>
+                        <li>Tape & Reeling</li>
+                        <li>Kitting</li>
+                        <li>RoHS Conversion Pb to Non Pb</li>
+                        <li>Solder-ability, Re-Tinning, Baking And Packing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 1em ">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="border:0.1em solid gray; overflow: hidden; ">
+                <img style="height: 36em;transform: scale(1.2);" src="img/services/S3.PNG" alt="">
+            </div>
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="margin: 0%;">
+                <div style="border:0.1em solid gray; margin-left: 1em ; height: 36em ; padding:5% 15% 0 4%">
+                    <h2 id="3p" style="font-weight: 900">Excess Inventory</h2>
+                    <p>
+                        <strong>AC</strong> is dedicated to help you resolve your Excess inventory problems. It is
+                        likely that your
+                        dead and slow-moving inventory is needed in someone else’ s production. We can turn your
+                        inventory into real money. </p>
+                    <h3 style="font-weight: 600">Consignment</h3>
+                    <p>Consign your stock to our warehouse, and you will increase the likelihood of selling the
+                        product based on our extensive network, prompt and expert Service.
+                        Or we market your excess inventory as available or “in stock” to
+                        <strong>AC</strong>. Our specialized sales
+                        team will follow the market trends for each line of your inventory and define the target
+                        customers that have a demand for your parts.
+                    </p>
+
+                    <h3 style="font-weight: 600">Line or Lot Buy</h3>
+
+                    <p>We purchase a single dead inventory line items from you or we purchase your excess lot.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="row" th:insert="~{common :: footer}">
+</div>
 </body>
 
 </html>
