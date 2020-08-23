@@ -1,0 +1,80 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISO9001</title>
+    <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script src="/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/" type="text/css">
+
+    <style>
+        .grad-hor {
+            height: 200px;
+            background: -webkit-linear-gradient(rgb(0, 132, 255), rgb(10, 10, 94));
+            /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(rgb(0, 132, 255), rgb(10, 10, 94));
+            /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(rgb(0, 132, 255), rgb(10, 10, 94));
+            /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right, rgb(0, 132, 255), rgb(10, 10, 94));
+            /* 标准的语法（必须放在最后） */
+        }
+
+        .box_text {
+            text-shadow: 1px 1px 5px #000;
+            letter-spacing: 3px;
+            color: #FFF;
+            font-weight: bold;
+            position: absolute;
+            top: 35%;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+    </style>
+</head>
+
+<body class="bg">
+
+<!--顶部导航-->
+<div class="row" th:insert="~{common :: header}">
+</div>
+
+    <main style="width: 80%;margin: 0 auto">
+        <img style="width: 300px;" src="logo_alpha.png" >
+        <div style="width: 100%; height: 20em; overflow: hidden; margin: 0 auto">
+            <div class="grad-hor" style="text-align: center ; position: absolute;
+            width: 80%;
+            height: 20em;">
+                <h1 class="box_text" style="font-size: 3.75em;color: white">ISO</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <a href="img/iso/ISO_EN.jpeg"><img style="transform: scale(0.8);width: 100% ;"
+                    src="img/iso/ISO_EN.jpeg" alt=""> </a>
+            </div>
+            <div class="col-sm-6">
+                <a href="img/iso/ISO_CN.jpeg"><img style="transform: scale(0.8);width: 100% ;"
+                    src="img/iso/ISO_CN.jpeg" alt=""> </a>
+            </div>
+        </div>
+
+    </main>
+
+    <br>
+    <br>
+
+
+
+    <br>
+    <br>
+
+
+<div class="row" th:insert="~{common :: footer}">
+</div>
+</body>
+</html>
